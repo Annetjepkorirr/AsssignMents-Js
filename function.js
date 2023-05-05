@@ -42,3 +42,29 @@ function findNumGreater(num1,num2){
     }
 }
 console.log(findNumGreater(100,20));
+
+
+// Write a function that takes in a array of numbers as a parameter and returns the 
+// second largest number in the array
+function number(numss){
+    numss.sort(function(m,n){
+        return n-m
+    })
+      
+}
+let numss = [10,12,45,32]
+console.log(number(numss));
+
+// Write a function that takes a string as a parameter and returns true if the string is
+//  a palindrome and false otherwise
+function findpalindrome(str){
+    let stmt = str.split('').reverse().join('')
+    if (str === stmt) {
+        return true
+    }
+    else{
+        return false
+    }
+}
+let str = "civic"
+console.log(findpalindrome(str))
